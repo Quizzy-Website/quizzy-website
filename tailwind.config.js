@@ -11,6 +11,7 @@ module.exports = {
         "primary-yellow": "#F7D047",
         "secondary-yellow": "#F3E24D",
         "primary-grey": "#2C2D2D",
+        "text-grey": "#484343",
         black: "#040404",
         white: "#ffffff",
       },
@@ -21,5 +22,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-clip-path")],
 };
