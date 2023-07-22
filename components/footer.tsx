@@ -79,21 +79,21 @@ const Footer = () => {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl px-6 pb-4 pt-8 sm:pt-16 lg:px-8 lg:pt-20">
+      <div className="mx-auto max-w-7xl px-6 pb-4 pt-8 sm:pt-0 lg:px-8 lg:pt-20">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-            <div className="md:grid md:grid-cols-2 md:gap-8">
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8">
               <div className="w-full">
                 <Image
                   src="/elements/Socialideas-cuate.png"
-                  className="w-full"
+                  className="w-[200px] md:w-full"
                   width={100}
                   height={100}
                   alt="footer-img"
                 />
               </div>
               <div className="mt-10 md:mt-0">
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">
+                <h3 className="text-md font-quicksand-bold leading-6 text-gray-900">
                   Quick Links
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -101,7 +101,7 @@ const Footer = () => {
                     <li key={item.name}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm font-quicksand leading-6 text-gray-600 hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -112,7 +112,7 @@ const Footer = () => {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h3 className="text-sm font-semibold leading-6 text-gray-900">
+                <h3 className="text-md font-quicksand-bold leading-6 text-gray-900">
                   Contact
                 </h3>
                 <ul role="list" className="mt-6 space-y-4">
@@ -120,7 +120,7 @@ const Footer = () => {
                     <li key={item.href}>
                       <a
                         href={item.href}
-                        className="text-sm leading-6 text-gray-600 hover:text-gray-900"
+                        className="text-sm font-quicksand leading-6 text-gray-600 hover:text-gray-900"
                       >
                         {item.name}
                       </a>
@@ -130,7 +130,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="space-y-8">
+          <div className="space-y-8 mt-8 md:mt-0">
             <Image
               className="h-10 w-auto sm:h-12"
               src="/favicon.png"
@@ -138,7 +138,7 @@ const Footer = () => {
               height={100}
               alt=""
             />
-            <p className="text-sm leading-6 text-gray-600">
+            <p className="text-md font-quicksand leading-6 text-gray-600">
               Unlock your creativity and inspire the world with captivating
               content
             </p>
@@ -147,7 +147,7 @@ const Footer = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-primary-grey hover:text-white"
+                  className="text-primary-grey"
                 >
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />

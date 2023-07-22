@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <>
       <div
-        className="relative bg-primary-yellow p-8 z-20"
+        className="relative bg-primary-yellow p-4 md:p-8 z-20"
         style={{ clipPath: "polygon(0 0, 100% 0, 100% 87%, 0% 100%)" }}
       >
         <div className="relative pb-16 pt-2 sm:pb-24 lg:pb-20">
@@ -120,14 +120,14 @@ export default function Header() {
               <div className="mt-16 sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left">
                 <h1>
                   <span className="block font-bold tracking-tight font-quicksand-bold">
-                    <span className="block text-text-grey text-4xl sm:text-5xl xl:text-5xl">
+                    <span className="block text-text-grey text-3xl sm:text-5xl xl:text-5xl">
                       Your Creative,
                     </span>
-                    <span className="block text-text-grey text-4xl sm:text-5xl xl:text-6xl">
+                    <span className="block text-text-grey text-3xl sm:text-5xl xl:text-6xl">
                       Media & Technology{" "}
                     </span>
 
-                    <span className="block text-text-grey text-4xl sm:text-5xl xl:text-5xl">
+                    <span className="block text-text-grey text-3xl sm:text-5xl xl:text-5xl">
                       Transformation Partner
                     </span>
                   </span>
@@ -138,7 +138,7 @@ export default function Header() {
                   occaecat fugiat aliqua ad ad non deserunt sunt.
                 </p>
               </div>
-              <div className="relative mt-12 sm:mx-auto sm:max-w-lg lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex lg:max-w-none lg:items-center">
+              <div className="relative mt-4 md:mt-12 sm:mx-auto sm:max-w-lg lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex lg:max-w-none lg:items-center">
                 <div className="relative mx-auto w-full lg:max-w-lg">
                   <button
                     type="button"
@@ -176,6 +176,19 @@ export default function Header() {
             alt="scroll"
           />
         </div>
+      </div>
+      <div className="relative flex items-center justify-center block md:hidden z-20 max-[515px]:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 400"
+          className="absolute top-0 mt-[-27%] origin-bottom -rotate-6 mr-[-2%]"
+        >
+          <path
+            fill="#2d2d2d"
+            fill-opacity="1"
+            d="M0,128L48,133.3C96,139,192,149,288,170.7C384,192,480,224,576,229.3C672,235,768,213,864,181.3C960,149,1056,107,1152,101.3C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
       </div>
     </>
   );

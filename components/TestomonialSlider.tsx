@@ -4,11 +4,11 @@ import Image from "next/image";
 
 const TestomonialSlider = () => {
   return (
-    <div className="mt-4">
+    <div className="mt-0 lg:mt-4">
       <div className="w-full">
         <div className="w-full">
           <Marquee play pauseOnHover loop={0}>
-            <div className="mx-auto grid auto-rows-fr grid-cols-1 lg:grid-cols-4">
+            <div className="mx-auto grid auto-rows-fr grid-cols-4">
               <article className="relative isolate flex flex-col justify-start overflow-hidden w-[380px] h-full px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
                 <Image
                   src="/elements/Image 59.png"

@@ -2,10 +2,10 @@ import React from "react";
 
 const Journey = () => {
   return (
-    <div className="w-full bg-white flex items-center justify-center mx-auto">
+    <div className="w-full bg-white flex lg:flex-row flex-col items-center justify-center mx-auto py-10 lg:py-0">
       <div className="w-full drop-shadow-md">
         <div
-          className="flex items-center relative w-full h-[250px] bg-primary-yellow"
+          className="items-center relative w-full h-[250px] bg-primary-yellow hidden lg:flex"
           style={{
             backgroundImage: "url('/elements/Rectangle850.svg')",
             clipPath: "polygon(0 0, 75% 0, 100% 100%, 0 100%)",
@@ -16,7 +16,10 @@ const Journey = () => {
           </p>
         </div>
       </div>
-      <div className="w-[135%] text-center px-16">
+      <div className="w-full lg:w-[135%] text-center px-4 md:px-16">
+        <p className="font-quicksand-bold text-2xl block lg:hidden mb-4">
+          Journey
+        </p>
         <p className="mb-8">
           A notable evolution in Quizzy&apos;s journey was the diversification
           from primarily text-based content creation in 2018 to embracing video

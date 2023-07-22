@@ -5,9 +5,9 @@ import Marquee from "react-fast-marquee";
 const FeaturesSlider = () => {
   return (
     <div className="mt-20 bg-primary-grey z-10">
-      <div className="relative pt-8 sm:pt-8 lg:pt-32">
+      <div className="relative max-[1026px]:pt-52 lg:pt-32">
         <Marquee play pauseOnHover loop={0}>
-          <ul className="mx-auto grid auto-rows-fr grid-cols-1 gap-4 lg:grid-cols-5">
+          <ul className="mx-auto grid auto-rows-fr gap-4 grid-cols-5">
             <li className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow w-[270px] h-full pt-12 pb-12 sm:pt-8 lg:pt-12">
               <div className="flex flex-1 flex-col p-6">
                 <Image
