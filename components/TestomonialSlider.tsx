@@ -7,9 +7,9 @@ const TestomonialSlider = () => {
     <div className="relative z-0" id="hash-section-3">
       <div className="w-full">
         <div className="w-full">
-          <Marquee play pauseOnHover loop={0}>
-            <div className="mx-auto grid auto-rows-fr grid-cols-4">
-              <article className="relative isolate flex flex-col justify-start overflow-hidden w-[380px] h-full px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
+          <Marquee play pauseOnHover loop={0} className="text-center">
+            <div className="flex flex-nowrap w-screen">
+              <article className="flex-1 relative isolate flex flex-col justify-start overflow-hidden px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
                 <Image
                   src="/elements/image59.png"
                   alt=""
@@ -45,7 +45,7 @@ const TestomonialSlider = () => {
                   </div>
                 </div>
               </article>
-              <article className="relative isolate flex flex-col justify-start overflow-hidden w-[380px] h-full px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
+              <article className="flex-1 relative isolate flex flex-col justify-start overflow-hidden px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
                 <Image
                   src="/elements/image62.png"
                   alt=""
@@ -89,7 +89,7 @@ const TestomonialSlider = () => {
                   </div>
                 </div>
               </article>
-              <article className="relative isolate flex flex-col justify-start overflow-hidden w-[380px] h-full px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
+              <article className="flex-1 relative isolate flex flex-col justify-start overflow-hidden px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
                 <Image
                   src="/elements/image69.png"
                   alt=""
@@ -137,7 +137,7 @@ const TestomonialSlider = () => {
                   </div>
                 </div>
               </article>
-              <article className="relative isolate flex flex-col justify-start overflow-hidden w-[380px] h-full px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
+              <article className="flex-1 relative isolate flex flex-col justify-start overflow-hidden px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
                 <Image
                   src="/elements/image73.png"
                   alt=""
