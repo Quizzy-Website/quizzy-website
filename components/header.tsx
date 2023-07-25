@@ -203,7 +203,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 group-hover:hidden"
-                        priority
+                        priority={false}
                       />
                       <Image
                         src="/headerimg/1_1.svg"
@@ -211,7 +211,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 hidden group-hover:block"
-                        priority
+                        priority={false}
                       />
                       <div className="cursor-pointer absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
@@ -224,7 +224,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 group-hover:hidden"
-                        priority
+                        priority={false}
                       />
                       <Image
                         src="/headerimg/2_2.svg"
@@ -232,7 +232,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 hidden group-hover:block"
-                        priority
+                        priority={false}
                       />
                       <div className="cursor-pointer absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
@@ -243,7 +243,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 group-hover:hidden"
-                        priority
+                        priority={false}
                       />
                       <Image
                         src="/headerimg/3_3.svg"
@@ -251,7 +251,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 hidden group-hover:block"
-                        priority
+                        priority={false}
                       />
                       <div className="cursor-pointer absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
@@ -264,7 +264,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 group-hover:hidden"
-                        priority
+                        priority={false}
                       />
                       <Image
                         src="/headerimg/4_4.svg"
@@ -272,7 +272,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 hidden group-hover:block"
-                        priority
+                        priority={false}
                       />
                       <div className="cursor-pointer absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
@@ -283,7 +283,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 group-hover:hidden"
-                        priority
+                        priority={false}
                       />
                       <Image
                         src="/headerimg/5_5.svg"
@@ -291,7 +291,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 hidden group-hover:block"
-                        priority
+                        priority={false}
                       />
                       <div className="cursor-pointer absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
