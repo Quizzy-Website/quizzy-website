@@ -1,6 +1,7 @@
 import { ChevronUpIcon } from "@heroicons/react/24/outline";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const navigation = {
@@ -15,11 +16,10 @@ const navigation = {
       name: (
         <p className="flex">
           {" "}
-          <EnvelopeIcon className="w-6 h-6" /> &nbsp;
-          <a href="mailto:quizzy@gmail.com">quizzy@gmail.com</a>{" "}
+          <EnvelopeIcon className="w-6 h-6" /> &nbsp; quizzy@gmail.com
         </p>
       ),
-      href: "#",
+      href: "mailto:quizzy@gmail.com",
     },
   ],
   social: [

@@ -6,14 +6,14 @@ import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
 const faqs = [
   {
     id: 1,
-    img: "/elements/Financeleaders-bro.png",
+    img: "/3d/3d-11.gif",
     description: "Ground-Up Leadership: At Quizzy, leaders are homegrown. ",
     answer:
       "The top management has climbed up from the grassroots level, shaped by hands-on experience and impeccable work ethics. This ensures seasoned, empathetic leadership that understands every facet of the operation.",
   },
   {
     id: 2,
-    img: "/elements/Teamwork-bro.png",
+    img: "/3d/3d-2.gif",
     description:
       "Shared Responsibilities & Quality Control: Quizzy believes in the power of collective effort.",
     answer:
@@ -21,7 +21,7 @@ const faqs = [
   },
   {
     id: 3,
-    img: "/elements/Businessdeal-cuate.png",
+    img: "/3d/3d-3.gif",
     description:
       "Dynamic Hiring & Performance Tracking: Agile and responsive, Quizzy keeps a vigilant eye on performance. ",
     answer:
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     id: 4,
-    img: "/elements/Analytics-amico.png",
+    img: "/3d/3d-4.gif",
     description:
       "Focus on Results, Not Micromanagement: Quizzy values efficiency and results over micromanagement. ",
     answer:
