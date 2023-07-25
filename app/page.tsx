@@ -6,7 +6,7 @@ import ExpandableComponent from "@/components/expandable";
 import Features from "@/components/features";
 import FeaturesSlider from "@/components/FeaturesSlider";
 import Footer from "@/components/footer";
-import Header from "@/components/header";
+import Header from "@/components/header2";
 import Journey from "@/components/journey";
 import TestomonialSlider from "@/components/TestomonialSlider";
 

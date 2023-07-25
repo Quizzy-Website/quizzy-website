@@ -1,7 +1,6 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import Image from "next/image";
 
 const navigation = [
   { name: "Vision", href: "#" },
@@ -157,26 +156,6 @@ export default function Header() {
         </div>
       </div>
 
-      <div className="relative flex items-center justify-center -mt-48 cursor-pointer hidden md:block z-20">
-        <div className="absolute z-10 top-12 right-24">
-          <Image
-            src="/elements/arrow.svg"
-            className="h-20 w-20 p-4"
-            width={100}
-            height={100}
-            alt="arrow"
-          />
-        </div>
-        <div className="absolute right-10 bg-primary-yellow rounded-[50%] w-[190px] h-[190px] p-4">
-          <Image
-            src="/elements/scroll.png"
-            className="w-40 h-40"
-            width={100}
-            height={100}
-            alt="scroll"
-          />
-        </div>
-      </div>
       <div className="relative flex items-center justify-center block md:hidden z-20 max-[515px]:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"

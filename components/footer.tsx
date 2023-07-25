@@ -1,21 +1,22 @@
+import { ChevronUpIcon } from "@heroicons/react/24/outline";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const navigation = {
   quicklinks: [
     { name: "Home", href: "#" },
-    { name: "About us", href: "#" },
-    { name: "Vision", href: "#" },
-    { name: "Work", href: "#" },
-    { name: "Journey", href: "#" },
+    { name: "Vision", href: "#hash-section-1" },
+    { name: "Work", href: "#hash-section-2" },
+    { name: "Journey", href: "#hash-section-3" },
   ],
   contact: [
     {
       name: (
         <p className="flex">
           {" "}
-          <EnvelopeIcon className="w-6 h-6" /> &nbsp;Quizzy@gmail.com{" "}
+          <EnvelopeIcon className="w-6 h-6" /> &nbsp;
+          <a href="mailto:quizzy@gmail.com">quizzy@gmail.com</a>{" "}
         </p>
       ),
       href: "#",
@@ -23,23 +24,23 @@ const navigation = {
   ],
   social: [
     {
-      name: "Facebook",
-      href: "#",
+      name: "Internshala",
+      href: "https://internshala.com/internships/internship-at-quizzy/",
       icon: (
         props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
       ) => (
-        <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
-          <path
-            fillRule="evenodd"
-            d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-            clipRule="evenodd"
-          />
-        </svg>
+        <Image
+          src="/elements/internshala.png"
+          width={100}
+          height={100}
+          alt="internshala"
+          className="h-7 w-7"
+        />
       ),
     },
     {
       name: "Instagram",
-      href: "#",
+      href: "https://instagram.com/quizzyinc/",
       icon: (
         props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
       ) => (
@@ -54,7 +55,7 @@ const navigation = {
     },
     {
       name: "LinkedIn",
-      href: "#",
+      href: "https://www.linkedin.com/company/quizzy-eduservices/",
       icon: (
         props: React.JSX.IntrinsicAttributes & React.SVGProps<SVGSVGElement>
       ) => (
@@ -71,6 +72,38 @@ const navigation = {
 };
 
 const Footer = () => {
+  const [showTopBtn, setShowTopBtn] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        setShowTopBtn(true);
+      } else {
+        setShowTopBtn(false);
+      }
+    });
+  }, []);
+
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    // first prevent the default behavior
+    e.preventDefault();
+    // get the href and remove everything before the hash (#)
+    const href = e.currentTarget.href;
+    const targetId = href.replace(/.*\#/, "");
+    // get the element by id and use scrollIntoView
+    const elem = document.getElementById(targetId);
+    elem?.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer
       className="bg-primary-yellow rounded-t-3xl -mt-10"
@@ -79,19 +112,10 @@ const Footer = () => {
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
-      <div className="mx-auto max-w-7xl px-6 pb-4 pt-8 sm:pt-0 lg:px-8 lg:pt-20">
+      <div className="mx-auto max-w-7xl px-6 pb-4 pt-0 sm:pt-0 lg:px-8 lg:pt-20">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8">
-              <div className="w-full">
-                <Image
-                  src="/elements/Socialideas-cuate.png"
-                  className="w-[200px] md:w-full"
-                  width={100}
-                  height={100}
-                  alt="footer-img"
-                />
-              </div>
               <div className="mt-10 md:mt-0">
                 <h3 className="text-md font-quicksand-bold leading-6 text-gray-900">
                   Quick Links
@@ -102,6 +126,7 @@ const Footer = () => {
                       <a
                         href={item.href}
                         className="text-sm font-quicksand leading-6 text-gray-600 hover:text-gray-900"
+                        onClick={handleScroll}
                       >
                         {item.name}
                       </a>
@@ -156,9 +181,12 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="mt-4 border-t border-gray-900/10 pt-8 sm:mt-16 lg:mt-16">
+        <div className="mt-4 border-t border-gray-900/10 pt-8 sm:mt-16 lg:mt-16 flex justify-between items-center">
           <p className="text-xs leading-5 text-primary-grey">
             &copy; 2020 Your Company, Inc. All rights reserved.
+          </p>
+          <p className="rounded-full border border-gray-900 p-2 cursor-pointer">
+            <ChevronUpIcon className="h-5 w-5" onClick={goToTop} />
           </p>
         </div>
       </div>

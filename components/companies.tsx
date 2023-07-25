@@ -1,94 +1,83 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 import Image from "next/image";
-
-const posts = [
-  {
-    id: 1,
-    title: "New Blog",
-    href: "#",
-    description:
-      "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. ",
-    imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3603&q=80",
-  },
-  // More posts...
-];
 
 const Companies = () => {
   return (
     <div>
-      <div className="relative w-full bg-primary-grey pt-24 mt-[-10%] max-[1026px]:pt-48 max-[768px]:pt-8 max-[515px]:mt-[-30%] md:mt-0 px-12 flex flex-col items-start justify-center">
-        <div className="max-w-7xl px-0 lg:px-10 mb-40 lg:mb-0">
-          <div className="max-w-2xl lg:max-w-xl">
-            <div className="mt-16 max-[512px]:mt-36 space-y-20 lg:mt-32 lg:mb-32">
-              {posts.map((post) => (
-                <article
-                  key={post.id}
-                  className="relative isolate flex flex-col md:flex-row gap-4 lg:gap-8"
-                >
-                  <div className="relative w-24 h-24 lg:shrink-0">
-                    <Image
-                      width={100}
-                      height={100}
-                      src={post.imageUrl}
-                      alt="image"
-                      className="absolute inset-0 h-full w-full rounded-2xl bg-gray-50 object-cover"
-                    />
-                    <div className="absolute inset-0 rounded-2xl ring-1 ring-inset ring-gray-900/10" />
-                  </div>
-                  <div>
-                    <div className="group relative max-w-xl">
-                      <h3 className="mt-2 text-lg leading-6 text-white font-inter">
-                        <a href={post.href}>
-                          <span className="absolute inset-0" />
-                          {post.title}
-                        </a>
-                      </h3>
-                      <p className="mt-2 text-sm leading-6 text-white font-inter">
-                        {post.description}
-                      </p>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className="self-center bg-white py-4 mt-[26%] max-[1190px]:mt-[32%] max-[1026px]:mt-[40%] max-[868px]:mt-[50%] max-[768px]:mt-[50%] max-[660px]:mt-[55%] max-[540px]:mt-[70%] max-[520px]:mt-[90%] max-[500px]:mt-[105%] max-[400px]:mt-[120%] max-[350px]:mt-[155%] w-[90%] sm:py-8 rounded-2xl border border-black absolute top-0 z-20">
+      <div className="relative mx-auto w-full max-[840px]:w-[92%] bg-[#000104] px-12 flex flex-col items-start justify-center">
+        <div className="self-center bg-white py-4 sm:py-8 rounded-2xl border border-black absolute top-0 mt-[-5%] max-[840px]:mt-[-12%] max-[480px]:mt-[-20%] z-20">
           <div className="mx-auto max-w-7xl px-0 lg:px-6">
-            <h2 className="text-center text-xl font-quicksand-bold leading-8 text-gray-900">
+            <h2 className="text-center md:text-2xl text-xl font-quicksand-bold leading-8 text-gray-900">
               We worked with
             </h2>
-            <div className="mx-auto mt-10 mb-8 grid grid-cols-4 items-center gap-x-0 lg:gap-x-12 gap-y-10">
-              <Image
-                className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
-                src="/companies/amazon-academy.png"
-                alt="Amazon Academy"
-                width={100}
-                height={100}
-              />
-              <Image
-                className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
-                src="/companies/vedantu.png"
-                alt="Vendantu"
-                width={100}
-                height={100}
-              />
-              <Image
-                className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
-                src="/companies/unacademy.png"
-                alt="Unacademy"
-                width={100}
-                height={100}
-              />
-              <Image
-                className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
-                src="/companies/toppr.png"
-                alt="Toppr"
-                width={100}
-                height={100}
-              />
-            </div>
+            <Marquee play pauseOnHover loop={0}>
+              <ul className="mx-auto mt-10 mb-8 grid auto-rows-fr items-center gap-x-0 lg:gap-x-12 gap-y-10 grid-cols-9">
+                <Image
+                  className="max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
+                  src="/companies/amazon-academy.png"
+                  alt="Amazon Academy"
+                  width={100}
+                  height={100}
+                />
+                <Image
+                  className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
+                  src="/companies/vedantu.png"
+                  alt="Vendantu"
+                  width={100}
+                  height={100}
+                />
+                <Image
+                  className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
+                  src="/companies/unacademy.png"
+                  alt="Unacademy"
+                  width={100}
+                  height={100}
+                />
+                <Image
+                  className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
+                  src="/companies/toppr.png"
+                  alt="Toppr"
+                  width={100}
+                  height={100}
+                />
+                <Image
+                  className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
+                  src="/companies/beyondskool.png"
+                  alt="beyondskool"
+                  width={100}
+                  height={100}
+                />
+                <Image
+                  className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
+                  src="/companies/bytedance-logo.png"
+                  alt="bytedance"
+                  width={100}
+                  height={100}
+                />
+                <Image
+                  className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
+                  src="/companies/cocubes-logo.png"
+                  alt="cocubes"
+                  width={100}
+                  height={100}
+                />
+                <Image
+                  className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
+                  src="/companies/doubtnut.png"
+                  alt="doubtnut"
+                  width={100}
+                  height={100}
+                />
+                <Image
+                  className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
+                  src="/companies/brainly.png"
+                  alt="doubtnut"
+                  width={100}
+                  height={100}
+                />
+              </ul>
+            </Marquee>
           </div>
         </div>
       </div>

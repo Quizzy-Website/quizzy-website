@@ -39,7 +39,7 @@ const faqs = [
 
 const ExpandableComponent = () => {
   return (
-    <div className="bg-primary-grey text-center">
+    <div className="bg-[#000104] text-center">
       <div className="mx-auto max-w-7xl px-6 pb-24 lg:px-8">
         <div className="mt-20">
           <dl className="space-y-16 sm:grid sm:grid-cols-2 sm:gap-x-10 sm:gap-y-16 sm:space-y-0 lg:gap-x-10 place-items-center">
@@ -48,11 +48,11 @@ const ExpandableComponent = () => {
                 {({ open }) => (
                   <>
                     <div key={faq.id} className="flex flex-col items-center">
-                      <dt className="w-[250px] text-base leading-7">
+                      <dt className="text-base leading-7">
                         <Disclosure.Button className="flex flex-col w-full items-center justify-between text-center">
                           <Image
                             src={faq.img}
-                            className="h-full w-full"
+                            className="h-full w-[250px]"
                             width={100}
                             height={100}
                             alt="Illustration"

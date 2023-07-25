@@ -1,17 +1,55 @@
 import Image from "next/image";
 import React from "react";
-import Marquee from "react-fast-marquee";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const FeaturesSlider = () => {
+  const settings = {
+    className: "center",
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    swipeToSlide: true,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1190,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 980,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+        },
+      },
+      {
+        breakpoint: 630,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <div className="mt-20 bg-primary-grey z-10">
-      <div className="relative max-[1026px]:pt-52 lg:pt-32">
-        <Marquee play pauseOnHover loop={0}>
-          <ul className="mx-auto grid auto-rows-fr gap-4 grid-cols-5">
-            <li className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow w-[270px] h-full pt-12 pb-12 sm:pt-8 lg:pt-12">
+    <div className="mt-12 bg-[#000104] z-10">
+      <div className="relative max-[1026px]:pt-48 lg:pt-44">
+        <ul className="mx-auto max-[980px]:w-[70%] max-[840px]:w-[92%] max-[630px]:w-[60%] max-[520px]:w-[90%] w-[92%] p-4">
+          <Slider {...settings} className="text-center">
+            <li className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center !w-[280px] shadow h-full pt-12 pb-8 sm:pt-8 lg:pt-12">
               <div className="flex flex-1 flex-col p-6">
                 <Image
-                  className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#2D3432] p-4 object-cover"
+                  className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
                   src="/elements/feature1.png"
                   width={100}
                   height={100}
@@ -30,10 +68,10 @@ const FeaturesSlider = () => {
                 </dl>
               </div>
             </li>
-            <li className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow w-[270px] h-full pt-12 pb-12 sm:pt-8 lg:pt-12">
+            <li className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow !w-[280px] h-full pt-12 pb-8 sm:pt-8 lg:pt-12">
               <div className="flex flex-1 flex-col p-6">
                 <Image
-                  className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#2D3432] p-4 object-cover"
+                  className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
                   src="/elements/feature2.png"
                   width={100}
                   height={100}
@@ -52,10 +90,10 @@ const FeaturesSlider = () => {
                 </dl>
               </div>
             </li>
-            <li className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow w-[270px] h-full pt-12 pb-12 sm:pt-8 lg:pt-12">
+            <li className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow !w-[280px] h-full pt-12 pb-8 sm:pt-8 lg:pt-12">
               <div className="flex flex-1 flex-col p-6">
                 <Image
-                  className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#2D3432] p-4 object-cover"
+                  className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
                   src="/elements/feature3.png"
                   width={100}
                   height={100}
@@ -74,10 +112,10 @@ const FeaturesSlider = () => {
                 </dl>
               </div>
             </li>
-            <li className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow w-[270px] h-full pt-12 pb-12 sm:pt-8 lg:pt-12">
+            <li className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow !w-[280px] h-full pt-12 pb-8 sm:pt-8 lg:pt-12">
               <div className="flex flex-1 flex-col p-6">
                 <Image
-                  className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#2D3432] p-4 object-cover"
+                  className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
                   src="/elements/feature4.png"
                   width={100}
                   height={100}
@@ -95,10 +133,10 @@ const FeaturesSlider = () => {
                 </dl>
               </div>
             </li>
-            <li className="col-span-1 flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow w-[270px] h-full pt-12 pb-12 sm:pt-8 lg:pt-12">
+            <li className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow !w-[280px] h-full pt-12 pb-8 sm:pt-8 lg:pt-12">
               <div className="flex flex-1 flex-col p-6">
                 <Image
-                  className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#2D3432] p-4 object-cover"
+                  className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
                   src="/elements/feature5.png"
                   width={100}
                   height={100}
@@ -117,9 +155,10 @@ const FeaturesSlider = () => {
                 </dl>
               </div>
             </li>
-          </ul>
-        </Marquee>
+          </Slider>
+        </ul>
       </div>
+
       <video width="100%" height="100%" muted autoPlay loop>
         <source src="/elements/quizzyvid.mp4" type="video/mp4" />
       </video>

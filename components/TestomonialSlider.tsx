@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const TestomonialSlider = () => {
   return (
-    <div className="mt-0 lg:mt-4">
+    <div className="relative z-0" id="hash-section-3">
       <div className="w-full">
         <div className="w-full">
           <Marquee play pauseOnHover loop={0}>

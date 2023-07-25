@@ -22,7 +22,7 @@ const features = [
 
 const Features = () => {
   return (
-    <div className="bg-black z-10">
+    <div className="bg-black z-10" id="hash-section-1">
       <div className="relative py-8 sm:py-8 lg:py-36">
         <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
           <p className="mt-2 text-3xl font-quicksand-bold tracking-tight text-white sm:text-3xl">
