@@ -15,63 +15,63 @@ const Companies = () => {
               <ul className="mx-auto mt-10 mb-8 grid auto-rows-fr items-center gap-x-0 lg:gap-x-12 gap-y-10 grid-cols-9">
                 <Image
                   className="max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
-                  src="/companies/amazon-academy.png"
+                  src="/companies/amazon-academy.webp"
                   alt="Amazon Academy"
                   width={100}
                   height={100}
                 />
                 <Image
                   className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
-                  src="/companies/vedantu.png"
+                  src="/companies/vedantu.webp"
                   alt="Vendantu"
                   width={100}
                   height={100}
                 />
                 <Image
                   className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
-                  src="/companies/unacademy.png"
+                  src="/companies/unacademy.webp"
                   alt="Unacademy"
                   width={100}
                   height={100}
                 />
                 <Image
                   className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
-                  src="/companies/toppr.png"
+                  src="/companies/toppr.webp"
                   alt="Toppr"
                   width={100}
                   height={100}
                 />
                 <Image
                   className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
-                  src="/companies/beyondskool.png"
+                  src="/companies/beyondskool.webp"
                   alt="beyondskool"
                   width={100}
                   height={100}
                 />
                 <Image
                   className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
-                  src="/companies/bytedance-logo.png"
+                  src="/companies/bytedance-logo.webp"
                   alt="bytedance"
                   width={100}
                   height={100}
                 />
                 <Image
                   className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
-                  src="/companies/cocubes-logo.png"
+                  src="/companies/cocubes-logo.webp"
                   alt="cocubes"
                   width={100}
                   height={100}
                 />
                 <Image
                   className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
-                  src="/companies/doubtnut.png"
+                  src="/companies/doubtnut.webp"
                   alt="doubtnut"
                   width={100}
                   height={100}
                 />
                 <Image
                   className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
-                  src="/companies/brainly.png"
+                  src="/companies/brainly.webp"
                   alt="doubtnut"
                   width={100}
                   height={100}

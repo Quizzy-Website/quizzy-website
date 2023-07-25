@@ -21,6 +21,7 @@ export default function RootLayout({
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
         <link rel="icon" type="image/png" href="/favicon.png" />
+
         {/* Google tag (gtag.js)  */}
         <>
           <Script

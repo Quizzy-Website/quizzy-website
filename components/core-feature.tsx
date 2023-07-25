@@ -5,18 +5,18 @@ const features = [
   {
     name: "Scalable Solutions",
     description: "Creating systems that adapt and grow with your needs.",
-    icon: "/elements/scalability.png",
+    icon: "/elements/scalability.webp",
   },
   {
     name: "Precision Focus",
     description: "Ensuring attention to detail and commitment to quality.",
-    icon: "/elements/focus.png",
+    icon: "/elements/focus.webp",
   },
   {
     name: "Diverse Expertise",
     description:
       "Utilizing a global remote team with varied skills for well-rounded solutions",
-    icon: "/elements/geometry.png",
+    icon: "/elements/geometry.webp",
   },
 ];
 

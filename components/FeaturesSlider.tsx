@@ -50,7 +50,7 @@ const FeaturesSlider = () => {
               <div className="flex flex-1 flex-col p-6">
                 <Image
                   className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
-                  src="/elements/feature1.png"
+                  src="/elements/feature1.webp"
                   width={100}
                   height={100}
                   alt=""
@@ -72,7 +72,7 @@ const FeaturesSlider = () => {
               <div className="flex flex-1 flex-col p-6">
                 <Image
                   className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
-                  src="/elements/feature2.png"
+                  src="/elements/feature2.webp"
                   width={100}
                   height={100}
                   alt=""
@@ -94,7 +94,7 @@ const FeaturesSlider = () => {
               <div className="flex flex-1 flex-col p-6">
                 <Image
                   className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
-                  src="/elements/feature3.png"
+                  src="/elements/feature3.webp"
                   width={100}
                   height={100}
                   alt=""
@@ -116,7 +116,7 @@ const FeaturesSlider = () => {
               <div className="flex flex-1 flex-col p-6">
                 <Image
                   className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
-                  src="/elements/feature4.png"
+                  src="/elements/feature4.webp"
                   width={100}
                   height={100}
                   alt=""
@@ -137,7 +137,7 @@ const FeaturesSlider = () => {
               <div className="flex flex-1 flex-col p-6">
                 <Image
                   className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
-                  src="/elements/feature5.png"
+                  src="/elements/feature5.webp"
                   width={100}
                   height={100}
                   alt=""

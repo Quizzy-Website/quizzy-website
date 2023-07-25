@@ -5,18 +5,18 @@ const features = [
   {
     name: "Collaboration",
     description: "Fostering a shared purpose to build a better tomorrow.",
-    icon: "/elements/collaboration.png",
+    icon: "/elements/collaboration.webp",
   },
   {
     name: "Drive Changes",
     description: "Uniting diverse talents to multiply impact and drive change.",
-    icon: "/elements/change-management.png",
+    icon: "/elements/change-management.webp",
   },
   {
     name: "Dedication",
     description:
       "DedicationCommitting heart and soul to the pursuit of global betterment.",
-    icon: "/elements/save-time.png",
+    icon: "/elements/save-time.webp",
   },
 ];
 

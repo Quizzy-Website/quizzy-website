@@ -33,7 +33,7 @@ const TestomonialSlider = () => {
 
                   <div className="absolute bottom-10 w-4/5 flex flex-wrap items-center justify-center gap-4 mt-8">
                     <Image
-                      src="/companies/brainly.png"
+                      src="/companies/brainly.webp"
                       alt="companies"
                       className="rounded-md py-1 px-4"
                       style={{
@@ -70,14 +70,14 @@ const TestomonialSlider = () => {
 
                   <div className="absolute bottom-10 w-4/5 flex flex-wrap items-center justify-center gap-4">
                     <Image
-                      src="/companies/toppr-white.png"
+                      src="/companies/toppr-white.webp"
                       alt="companies"
                       className="rounded-md py-2 px-2"
                       width={100}
                       height={100}
                     />
                     <Image
-                      src="/companies/vedantu-white.png"
+                      src="/companies/vedantu-white.webp"
                       alt="companies"
                       className="rounded-md py-3 px-4"
                       style={{
@@ -115,7 +115,7 @@ const TestomonialSlider = () => {
 
                   <div className="absolute bottom-10 w-4/5 flex flex-wrap items-center justify-center gap-4 mt-8">
                     <Image
-                      src="/companies/bytedance.png"
+                      src="/companies/bytedance.webp"
                       alt="companies"
                       className="rounded-md py-3 px-4"
                       style={{
@@ -125,7 +125,7 @@ const TestomonialSlider = () => {
                       height={100}
                     />
                     <Image
-                      src="/companies/unacademy-white.png"
+                      src="/companies/unacademy-white.webp"
                       alt="companies"
                       className="rounded-md py-3 px-4"
                       style={{
@@ -161,7 +161,7 @@ const TestomonialSlider = () => {
 
                   <div className="absolute bottom-10 w-4/5 flex flex-wrap items-center justify-center gap-4 mt-8">
                     <Image
-                      src="/companies/cocubes.png"
+                      src="/companies/cocubes.webp"
                       alt="companies"
                       className="rounded-md py-3 px-4"
                       style={{
