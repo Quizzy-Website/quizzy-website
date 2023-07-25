@@ -11,7 +11,7 @@ const TestomonialSlider = () => {
             <div className="flex flex-nowrap w-screen">
               <article className="flex-1 relative isolate flex flex-col justify-start overflow-hidden px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
                 <Image
-                  src="/elements/image59.png"
+                  src="/elements/image59.svg"
                   alt=""
                   width={100}
                   height={100}
@@ -47,7 +47,7 @@ const TestomonialSlider = () => {
               </article>
               <article className="flex-1 relative isolate flex flex-col justify-start overflow-hidden px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
                 <Image
-                  src="/elements/image62.png"
+                  src="/elements/image62.svg"
                   alt=""
                   width={100}
                   height={100}
@@ -91,7 +91,7 @@ const TestomonialSlider = () => {
               </article>
               <article className="flex-1 relative isolate flex flex-col justify-start overflow-hidden px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
                 <Image
-                  src="/elements/image69.png"
+                  src="/elements/image69.svg"
                   alt=""
                   width={100}
                   height={100}
@@ -139,7 +139,7 @@ const TestomonialSlider = () => {
               </article>
               <article className="flex-1 relative isolate flex flex-col justify-start overflow-hidden px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
                 <Image
-                  src="/elements/image73.png"
+                  src="/elements/image73.svg"
                   alt=""
                   width={100}
                   height={100}
