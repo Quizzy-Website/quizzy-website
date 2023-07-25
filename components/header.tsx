@@ -83,6 +83,7 @@ export default function Header() {
                 className="h-16 w-auto sm:h-24"
                 src="/logo.png"
                 alt=""
+                priority={true}
               />
             </a>
           </div>
@@ -202,6 +203,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 group-hover:hidden"
+                        priority
                       />
                       <Image
                         src="/headerimg/1_1.png"
@@ -209,6 +211,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 hidden group-hover:block"
+                        priority
                       />
                       <div className="cursor-pointer absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
@@ -221,6 +224,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 group-hover:hidden"
+                        priority
                       />
                       <Image
                         src="/headerimg/2_2.png"
@@ -228,6 +232,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 hidden group-hover:block"
+                        priority
                       />
                       <div className="cursor-pointer absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
@@ -238,6 +243,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 group-hover:hidden"
+                        priority
                       />
                       <Image
                         src="/headerimg/3_3.png"
@@ -245,6 +251,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 hidden group-hover:block"
+                        priority
                       />
                       <div className="cursor-pointer absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
@@ -257,6 +264,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 group-hover:hidden"
+                        priority
                       />
                       <Image
                         src="/headerimg/4_4.png"
@@ -264,6 +272,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 hidden group-hover:block"
+                        priority
                       />
                       <div className="cursor-pointer absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>
@@ -274,6 +283,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 group-hover:hidden"
+                        priority
                       />
                       <Image
                         src="/headerimg/5_5.png"
@@ -281,6 +291,7 @@ export default function Header() {
                         width={100}
                         height={100}
                         className="aspect-[2/3] w-full rounded-xl bg-gray-900/5 object-cover shadow-lg transition duration-150 hidden group-hover:block"
+                        priority
                       />
                       <div className="cursor-pointer absolute inset-0 rounded-xl ring-1 ring-inset ring-gray-900/10" />
                     </div>

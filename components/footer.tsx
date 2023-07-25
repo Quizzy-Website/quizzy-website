@@ -1,7 +1,6 @@
 import { ChevronUpIcon } from "@heroicons/react/24/outline";
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const navigation = {
@@ -16,10 +15,10 @@ const navigation = {
       name: (
         <p className="flex">
           {" "}
-          <EnvelopeIcon className="w-6 h-6" /> &nbsp; quizzy@gmail.com
+          <EnvelopeIcon className="w-6 h-6" /> &nbsp;support@quizzy.co.in
         </p>
       ),
-      href: "mailto:quizzy@gmail.com",
+      href: "mailto:support@quizzy.co.in",
     },
   ],
   social: [
@@ -183,7 +182,7 @@ const Footer = () => {
         </div>
         <div className="mt-4 border-t border-gray-900/10 pt-8 sm:mt-16 lg:mt-16 flex justify-between items-center">
           <p className="text-xs leading-5 text-primary-grey">
-            &copy; 2020 Your Company, Inc. All rights reserved.
+            &copy; 2023, Quizzy, Inc. All rights reserved
           </p>
           <p className="rounded-full border border-gray-900 p-2 cursor-pointer">
             <ChevronUpIcon className="h-5 w-5" onClick={goToTop} />
