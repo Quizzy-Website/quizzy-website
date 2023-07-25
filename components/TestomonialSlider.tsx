@@ -11,7 +11,7 @@ const TestomonialSlider = () => {
             <div className="mx-auto grid auto-rows-fr grid-cols-4">
               <article className="relative isolate flex flex-col justify-start overflow-hidden w-[380px] h-full px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
                 <Image
-                  src="/elements/Image 59.png"
+                  src="/elements/Image59.png"
                   alt=""
                   width={100}
                   height={100}
@@ -47,7 +47,7 @@ const TestomonialSlider = () => {
               </article>
               <article className="relative isolate flex flex-col justify-start overflow-hidden w-[380px] h-full px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
                 <Image
-                  src="/elements/Image 62.png"
+                  src="/elements/Image62.png"
                   alt=""
                   width={100}
                   height={100}
@@ -91,7 +91,7 @@ const TestomonialSlider = () => {
               </article>
               <article className="relative isolate flex flex-col justify-start overflow-hidden w-[380px] h-full px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
                 <Image
-                  src="/elements/Image 69.png"
+                  src="/elements/Image69.png"
                   alt=""
                   width={100}
                   height={100}
@@ -139,7 +139,7 @@ const TestomonialSlider = () => {
               </article>
               <article className="relative isolate flex flex-col justify-start overflow-hidden w-[380px] h-full px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
                 <Image
-                  src="/elements/Image 73.png"
+                  src="/elements/Image73.png"
                   alt=""
                   width={100}
                   height={100}
