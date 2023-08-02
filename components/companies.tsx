@@ -69,13 +69,13 @@ const Companies = () => {
                   width={100}
                   height={100}
                 />
-                <Image
+                {/* <Image
                   className="col-span-2 max-h-8 lg:max-h-12 w-full object-contain lg:col-span-1"
                   src="/companies/brainly.webp"
                   alt="doubtnut"
                   width={100}
                   height={100}
-                />
+                /> */}
               </ul>
             </Marquee>
           </div>

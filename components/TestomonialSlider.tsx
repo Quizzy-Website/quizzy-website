@@ -9,7 +9,7 @@ const TestomonialSlider = () => {
         <div className="w-full">
           <Marquee play pauseOnHover loop={0} className="text-center">
             <div className="flex flex-nowrap w-full sm:w-screen">
-              <article className="w-screen flex-1 relative isolate flex flex-col justify-start overflow-hidden px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
+              {/* <article className="w-screen flex-1 relative isolate flex flex-col justify-start overflow-hidden px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
                 <Image
                   src="/elements/image59.svg"
                   alt=""
@@ -44,7 +44,7 @@ const TestomonialSlider = () => {
                     />
                   </div>
                 </div>
-              </article>
+              </article> */}
               <article className="w-screen flex-1 relative isolate flex flex-col justify-start overflow-hidden px-8 pb-32 pt-32 sm:pt-16 lg:pt-32">
                 <Image
                   src="/elements/image62.svg"
