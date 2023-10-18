@@ -117,7 +117,7 @@ export default function Header() {
                 target="_blank"
                 className="font-quicksand-bold inline-flex items-center rounded-xl hover:border-2 hover:border-primary-yellow bg-primary-yellow hover:bg-transparent px-4 py-2 text-base font-medium text-black hover:text-primary-yellow hover:bg-gray-50 transition duration-150"
               >
-                Book a call
+                Contact Us
               </a>
             </span>
           </div>
@@ -178,9 +178,8 @@ export default function Header() {
                     Crafting AI’s future with Edtech Expertise
                   </h1>
                   <p className="relative mt-6 text-base sm:text-xl lg:text-lg xl:text-xl font-inter leading-8 text-gray-300 sm:max-w-md lg:max-w-none">
-                    At Quizzy, we’re more than just a data labelling service.
-                    We’re the silent partner powering your systems, with a
-                    deep-rooted foundation in Edtech. Think of us as your
+                    Your silent partner powering your content and data systems,
+                    with a deep-rooted foundation in Edtech. Think of us as your
                     co-conspirator crafting robust solutions one data point at a
                     time.
                   </p>
@@ -190,7 +189,7 @@ export default function Header() {
                       target="_blank"
                       className="rounded-xl bg-primary-yellow px-3.5 py-2.5 text-sm font-quicksand-bold text-black shadow-sm hover:bg-transparent hover:border-2 hover:border-primary-yellow hover:text-primary-yellow focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-yellow transition duration-150"
                     >
-                      Book a call
+                      Contact Us
                     </Link>
                   </div>
                 </div>
