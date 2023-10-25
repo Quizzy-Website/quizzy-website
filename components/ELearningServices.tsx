@@ -10,7 +10,7 @@ const services = [
     name: "Q&A Content",
     description:
       "Designing solutions for student questions. When AI generates initial content, we add a quality control layer for accuracy.",
-    href: "#",
+    href: "/qna",
     icon: CloudArrowUpIcon,
   },
   {
@@ -86,7 +86,6 @@ const ELearningServices = () => {
                   <p className="mt-1">
                     <a
                       href={service.href}
-                      target="_blank"
                       className="text-sm font-inter leading-6 text-primary-yellow"
                     >
                       Learn more <span aria-hidden="true">→</span>
@@ -111,7 +110,6 @@ const ELearningServices = () => {
                   <p className="mt-3">
                     <a
                       href={service.href}
-                      target="_blank"
                       className="text-sm font-inter leading-6 text-primary-yellow"
                     >
                       Learn more <span aria-hidden="true">→</span>

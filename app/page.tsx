@@ -11,12 +11,14 @@ import FeaturesSlider from "@/components/FeaturesSlider";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 import Journey from "@/components/journey";
+import Navigation from "@/components/navigation";
 import Numbers from "@/components/Numbers";
 import TestomonialSlider from "@/components/TestomonialSlider";
 
 export default function Home() {
   return (
     <main className="flex flex-col">
+      <Navigation />
       <Header />
       <Companies />
       <ELearningSolutions />
