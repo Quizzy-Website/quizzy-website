@@ -11,12 +11,27 @@ interface Props {
   description: string;
   paraOne: ReactElement;
   paraTwo: ReactElement;
+  paraThree?: ReactElement;
+  paraFour?: ReactElement;
   imgOne: string;
   imgTwo: string;
+  imgThree?: string;
+  imgFour?: string;
 }
 
 const ServicePage: NextPage<Props> = (props) => {
-  const { title, description, paraOne, paraTwo, imgOne, imgTwo } = props;
+  const {
+    title,
+    description,
+    paraOne,
+    paraTwo,
+    paraThree,
+    paraFour,
+    imgOne,
+    imgTwo,
+    imgThree,
+    imgFour,
+  } = props;
 
   return (
     <>
@@ -194,6 +209,109 @@ const ServicePage: NextPage<Props> = (props) => {
               </div>
             </div>
           </div>
+
+          {paraThree && (
+            <div className="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:items-center lg:gap-8">
+              <div className="relative">{paraThree}</div>
+
+              <div className="relative -mx-4 mt-10 lg:mt-0" aria-hidden="true">
+                <svg
+                  className="absolute left-1/2 -translate-x-1/2 translate-y-16 transform lg:hidden"
+                  width={784}
+                  height={404}
+                  fill="none"
+                  viewBox="0 0 784 404"
+                >
+                  <defs>
+                    <pattern
+                      id="ca9667ae-9f92-4be7-abcb-9e3d727f2941"
+                      x={0}
+                      y={0}
+                      width={20}
+                      height={20}
+                      patternUnits="userSpaceOnUse"
+                    >
+                      <rect
+                        x={0}
+                        y={0}
+                        width={4}
+                        height={4}
+                        className="text-gray-800"
+                        fill="currentColor"
+                      />
+                    </pattern>
+                  </defs>
+                  <rect
+                    width={784}
+                    height={404}
+                    fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)"
+                  />
+                </svg>
+                {imgThree && (
+                  <Image
+                    className="relative mx-auto"
+                    width={490}
+                    height={100}
+                    src={imgThree ?? ""}
+                    alt=""
+                  />
+                )}
+              </div>
+            </div>
+          )}
+
+          {paraFour && (
+            <div className="relative mt-12 sm:mt-16 lg:mt-24 lg:mb-16">
+              <div className="lg:grid lg:grid-flow-row-dense lg:grid-cols-2 lg:items-center lg:gap-8">
+                <div className="lg:col-start-2">{paraFour}</div>
+
+                <div className="relative -mx-4 mt-10 lg:col-start-1 lg:mt-0 lg:mb-32">
+                  <svg
+                    className="absolute left-1/2 -translate-x-1/2 translate-y-16 transform lg:hidden"
+                    width={784}
+                    height={404}
+                    fill="none"
+                    viewBox="0 0 784 404"
+                    aria-hidden="true"
+                  >
+                    <defs>
+                      <pattern
+                        id="e80155a9-dfde-425a-b5ea-1f6fadd20131"
+                        x={0}
+                        y={0}
+                        width={20}
+                        height={20}
+                        patternUnits="userSpaceOnUse"
+                      >
+                        <rect
+                          x={0}
+                          y={0}
+                          width={4}
+                          height={4}
+                          className="text-gray-800"
+                          fill="currentColor"
+                        />
+                      </pattern>
+                    </defs>
+                    <rect
+                      width={784}
+                      height={404}
+                      fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)"
+                    />
+                  </svg>
+                  {imgFour && (
+                    <Image
+                      className="relative mx-auto"
+                      width={490}
+                      height={100}
+                      src={imgFour ?? ""}
+                      alt=""
+                    />
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </div>
       <Footer />

@@ -17,11 +17,8 @@ const Numbers = () => {
             <h2 className="text-3xl font-quicksand-bold tracking-tight text-primary-yellow sm:text-4xl">
               Trusted by people worldwide
             </h2>
-            <p className="mt-4 text-lg font-inter leading-8 text-gray-300">
-              Lorem ipsum dolor sit amet consect adipisicing possimus.
-            </p>
           </div>
-          <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-5">
+          <dl className="mt-10 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-5">
             {stats.map((stat) => (
               <div key={stat.id} className="flex flex-col bg-white/5 p-8">
                 <dt className="text-sm font-inter leading-6 text-gray-300">

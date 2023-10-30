@@ -2,7 +2,7 @@ import React from "react";
 
 const Journey = () => {
   return (
-    <div className="relative w-full bg-white flex lg:flex-row flex-col items-center mx-auto py-10 lg:py-0 mb-32 xs:h-[140px] h-[200px] sm:h-[104px]">
+    <div className="relative w-full bg-white flex lg:flex-row flex-col items-center mx-auto py-10 lg:py-0 h-[350px] lg:h-[230px]">
       <div className="absolute -top-2 w-full drop-shadow-md z-10">
         <div
           className="items-center relative w-2/5 h-[240px] bg-primary-yellow hidden lg:flex"
@@ -16,7 +16,7 @@ const Journey = () => {
           </p>
         </div>
       </div>
-      <div className="lg:w-3/5 w-full absolute right-0 top-0 py-4 lg:py-16 text-center px-4 md:px-16">
+      <div className="lg:w-3/5 w-full absolute right-0 top-0 py-4 lg:pt-8 text-center px-4 md:px-16">
         <p className="font-quicksand-bold text-2xl block lg:hidden mb-4">
           Journey
         </p>

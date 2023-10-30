@@ -163,8 +163,9 @@ const Footer = () => {
               alt=""
             />
             <p className="text-md font-quicksand leading-6 text-gray-600">
-              Unlock your creativity and inspire the world with captivating
-              content
+              Your silent partner powering your content and data systems, with a
+              deep-rooted foundation in Edtech. Think of us as your
+              co-conspirator crafting robust solutions one data point at a time.
             </p>
             <div className="flex space-x-6 items-center">
               {navigation.social.map((item) => (

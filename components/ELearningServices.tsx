@@ -1,9 +1,13 @@
 import React from "react";
 import {
-  ArrowPathIcon,
-  CloudArrowUpIcon,
-  LockClosedIcon,
+  AdjustmentsHorizontalIcon,
+  CircleStackIcon,
+  QuestionMarkCircleIcon,
+  TableCellsIcon,
+  UserGroupIcon,
+  VideoCameraIcon,
 } from "@heroicons/react/20/solid";
+import { ClipboardDocumentCheckIcon } from "@heroicons/react/24/solid";
 
 const services = [
   {
@@ -11,27 +15,27 @@ const services = [
     description:
       "Designing solutions for student questions. When AI generates initial content, we add a quality control layer for accuracy.",
     href: "/qna",
-    icon: CloudArrowUpIcon,
+    icon: QuestionMarkCircleIcon,
   },
   {
     name: "Video Content",
     description:
       "Producing video solutions for student queries or test preparation questions.",
-    href: "#",
-    icon: LockClosedIcon,
+    href: "/video-content",
+    icon: VideoCameraIcon,
   },
   {
     name: "Support Teams",
     description: "Live support for student questions.",
-    href: "#",
-    icon: ArrowPathIcon,
+    href: "/support-teams",
+    icon: UserGroupIcon,
   },
   {
     name: "Data Strategy",
     description:
       "Collaborating with top-tier CDOs globally to shape the requisite data approach for model construction.",
-    href: "#",
-    icon: ArrowPathIcon,
+    href: "/data-strategy",
+    icon: CircleStackIcon,
   },
 ];
 
@@ -40,21 +44,21 @@ const services2 = [
     name: "Higher Quality Answers than default GPT",
     description:
       "Offering datasets enabling clients to produce superior automated responses. Clients employ Retrieval Automated Generation, utilizing the provided dataset for enhanced outcomes.",
-    href: "#",
-    icon: ArrowPathIcon,
+    href: "/elevating-chatbots",
+    icon: TableCellsIcon,
   },
   {
     name: "Multi-agent frameworks",
     description:
       "Delivering platforms for personalized student game experiences. Includes distinct AI Agents portraying varied characters for immersive role-playing.",
-    href: "#",
-    icon: ArrowPathIcon,
+    href: "/multi-agent-framework",
+    icon: ClipboardDocumentCheckIcon,
   },
   {
     name: "Automated Grading",
     description: `Supplying datasets for client's model to facilitate automatic grading of students' long and subjective responses. Integration of manual quality control ensures model feedback and reduces grading effort.`,
-    href: "#",
-    icon: ArrowPathIcon,
+    href: "/automated-grading",
+    icon: AdjustmentsHorizontalIcon,
   },
 ];
 

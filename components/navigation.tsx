@@ -32,14 +32,14 @@ const Navigation = () => {
         aria-label="Global"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Quizzy</span>
             <Image
               width={100}
               height={100}
               className="h-16 w-auto sm:h-24"
               src="/logo.png"
-              alt=""
+              alt="Logo"
               priority={true}
             />
           </a>
