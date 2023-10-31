@@ -76,7 +76,7 @@ export default function Header() {
                   <div className="group ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                     <div className="relative">
                       <Image
-                        src="/headerimg/1.svg"
+                        src="/headerimg/1.webp"
                         alt=""
                         width={100}
                         height={100}
@@ -84,7 +84,7 @@ export default function Header() {
                         priority={false}
                       />
                       <Image
-                        src="/headerimg/1_1.svg"
+                        src="/headerimg/1_1.webp"
                         alt=""
                         width={100}
                         height={100}
@@ -97,7 +97,7 @@ export default function Header() {
                   <div className="group mr-auto w-44 flex-none space-y-8 sm:mr-0 sm:pt-52 lg:pt-36">
                     <div className="relative">
                       <Image
-                        src="/headerimg/2.svg"
+                        src="/headerimg/2.webp"
                         alt=""
                         width={100}
                         height={100}
@@ -105,7 +105,7 @@ export default function Header() {
                         priority={false}
                       />
                       <Image
-                        src="/headerimg/2_2.svg"
+                        src="/headerimg/2_2.webp"
                         alt=""
                         width={100}
                         height={100}
@@ -116,7 +116,7 @@ export default function Header() {
                     </div>
                     <div className="relative">
                       <Image
-                        src="/headerimg/3.svg"
+                        src="/headerimg/3.webp"
                         alt=""
                         width={100}
                         height={100}
@@ -124,7 +124,7 @@ export default function Header() {
                         priority={false}
                       />
                       <Image
-                        src="/headerimg/3_3.svg"
+                        src="/headerimg/3_3.webp"
                         alt=""
                         width={100}
                         height={100}
@@ -137,7 +137,7 @@ export default function Header() {
                   <div className="group w-44 flex-none space-y-8 pt-32 sm:pt-0">
                     <div className="relative">
                       <Image
-                        src="/headerimg/4.svg"
+                        src="/headerimg/4.webp"
                         alt=""
                         width={100}
                         height={100}
@@ -145,7 +145,7 @@ export default function Header() {
                         priority={false}
                       />
                       <Image
-                        src="/headerimg/4_4.svg"
+                        src="/headerimg/4_4.webp"
                         alt=""
                         width={100}
                         height={100}
@@ -156,7 +156,7 @@ export default function Header() {
                     </div>
                     <div className="relative">
                       <Image
-                        src="/headerimg/5.svg"
+                        src="/headerimg/5.webp"
                         alt=""
                         width={100}
                         height={100}
@@ -164,7 +164,7 @@ export default function Header() {
                         priority={false}
                       />
                       <Image
-                        src="/headerimg/5_5.svg"
+                        src="/headerimg/5_5.webp"
                         alt=""
                         width={100}
                         height={100}
