@@ -42,11 +42,14 @@ const FeaturesSlider = () => {
   };
 
   return (
-    <div className="mt-12 bg-[#000104] z-10">
-      <div className="relative max-[1026px]:pt-48 lg:pt-44">
+    <div className="bg-[#000104] z-10">
+      <div className="relative max-[1026px]:pt-10 lg:pt-6">
         <ul className="mx-auto max-[980px]:w-[70%] max-[840px]:w-[92%] max-[630px]:w-[60%] max-[520px]:w-[90%] w-[92%] p-4">
           <Slider {...settings} className="text-center">
-            <li className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center !w-[280px] shadow h-full pt-12 pb-8 sm:pt-8 lg:pt-12">
+            <a
+              href="/image-annotation"
+              className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center !w-[280px] shadow h-full pt-12 pb-8 sm:pt-8 lg:pt-12"
+            >
               <div className="flex flex-1 flex-col p-6">
                 <Image
                   className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
@@ -67,8 +70,11 @@ const FeaturesSlider = () => {
                   </dd>
                 </dl>
               </div>
-            </li>
-            <li className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow !w-[280px] h-full pt-12 pb-8 sm:pt-8 lg:pt-12">
+            </a>
+            <a
+              href="/video-annotation"
+              className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow !w-[280px] h-full pt-12 pb-8 sm:pt-8 lg:pt-12"
+            >
               <div className="flex flex-1 flex-col p-6">
                 <Image
                   className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
@@ -89,8 +95,11 @@ const FeaturesSlider = () => {
                   </dd>
                 </dl>
               </div>
-            </li>
-            <li className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow !w-[280px] h-full pt-12 pb-8 sm:pt-8 lg:pt-12">
+            </a>
+            <a
+              href="/text-annotation"
+              className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow !w-[280px] h-full pt-12 pb-8 sm:pt-8 lg:pt-12"
+            >
               <div className="flex flex-1 flex-col p-6">
                 <Image
                   className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
@@ -111,8 +120,11 @@ const FeaturesSlider = () => {
                   </dd>
                 </dl>
               </div>
-            </li>
-            <li className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow !w-[280px] h-full pt-12 pb-8 sm:pt-8 lg:pt-12">
+            </a>
+            <a
+              href="/audio-transcription"
+              className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow !w-[280px] h-full pt-12 pb-8 sm:pt-8 lg:pt-12"
+            >
               <div className="flex flex-1 flex-col p-6">
                 <Image
                   className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
@@ -132,8 +144,11 @@ const FeaturesSlider = () => {
                   </dd>
                 </dl>
               </div>
-            </li>
-            <li className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow !w-[280px] h-full pt-12 pb-8 sm:pt-8 lg:pt-12">
+            </a>
+            <a
+              href="/sentiment-analysis"
+              className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow !w-[280px] h-full pt-12 pb-8 sm:pt-8 lg:pt-12"
+            >
               <div className="flex flex-1 flex-col p-6">
                 <Image
                   className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
@@ -154,7 +169,33 @@ const FeaturesSlider = () => {
                   </dd>
                 </dl>
               </div>
-            </li>
+            </a>
+            <a
+              href="/support-teams-feature"
+              className="flex flex-col divide-y divide-gray-200 rounded-2xl bg-white text-center shadow !w-[280px] h-full pt-12 pb-8 sm:pt-8 lg:pt-12"
+            >
+              <div className="flex flex-1 flex-col p-6">
+                <Image
+                  className="mx-auto h-24 w-24 flex-shrink-0 rounded-full bg-[#000104] p-4 object-cover"
+                  src="/elements/feature5.webp"
+                  width={100}
+                  height={100}
+                  alt=""
+                />
+                <h3 className="mt-6 text-md font-quicksand-bold text-gray-900">
+                  Support teams
+                </h3>
+                <dl className="mt-1 flex flex-grow flex-col justify-between">
+                  <dt className="sr-only">Title</dt>
+                  <dd className="text-sm text-gray-900 font-quicksand">
+                    Live support to answer client queries
+                    <br />
+                    <br />
+                    <br />
+                  </dd>
+                </dl>
+              </div>
+            </a>
           </Slider>
         </ul>
       </div>
