@@ -5,10 +5,14 @@ import React, { useEffect, useState } from "react";
 
 const navigation = {
   quicklinks: [
-    { name: "Home", href: "#" },
+    { name: "Home", href: "/" },
     { name: "Vision", href: "#hash-section-1" },
     { name: "Work", href: "#hash-section-2" },
     { name: "Journey", href: "#hash-section-3" },
+    {
+      name: "Contact Us",
+      href: "https://calendly.com/quizzy/30min?back=1&month=2023-06",
+    },
   ],
   contact: [
     {
@@ -91,16 +95,16 @@ const Footer = () => {
   };
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    // first prevent the default behavior
-    e.preventDefault();
-    // get the href and remove everything before the hash (#)
     const href = e.currentTarget.href;
-    const targetId = href.replace(/.*\#/, "");
-    // get the element by id and use scrollIntoView
-    const elem = document.getElementById(targetId);
-    elem?.scrollIntoView({
-      behavior: "smooth",
-    });
+    // If the href has a hash (#) and it is within the current origin (not an external link)
+    if (href.includes("#") && href.includes(window.location.origin)) {
+      e.preventDefault(); // Prevent the default behavior for internal hash links
+      const targetId = href.replace(/.*\#/, "");
+      const elem = document.getElementById(targetId);
+      elem?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
   };
 
   return (
@@ -185,8 +189,8 @@ const Footer = () => {
           <p className="text-xs leading-5 text-primary-grey">
             &copy; 2023, Quizzy, Inc. All rights reserved
           </p>
-          <p className="rounded-full border border-gray-900 p-2 cursor-pointer">
-            <ChevronUpIcon className="h-5 w-5" onClick={goToTop} />
+          <p className="rounded-full bg-gray-900 p-2 text-white cursor-pointer">
+            <ChevronUpIcon className="h-6 w-6" onClick={goToTop} />
           </p>
         </div>
       </div>

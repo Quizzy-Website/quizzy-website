@@ -3,7 +3,7 @@
 import React, { ReactElement } from "react";
 import Image from "next/image";
 import Footer from "./footer";
-import Navigation from "./navigation";
+import Navigation from "./nonlinks-navigation";
 import { NextPage } from "next";
 
 interface Props {
@@ -119,8 +119,8 @@ const ServicePage: NextPage<Props> = (props) => {
               </svg>
               <Image
                 className="relative mx-auto"
-                width={490}
-                height={100}
+                width={560}
+                height={200}
                 src={imgOne}
                 alt=""
               />
@@ -201,8 +201,8 @@ const ServicePage: NextPage<Props> = (props) => {
                 </svg>
                 <Image
                   className="relative mx-auto"
-                  width={490}
-                  height={100}
+                  width={560}
+                  height={200}
                   src={imgTwo}
                   alt=""
                 />
@@ -250,8 +250,8 @@ const ServicePage: NextPage<Props> = (props) => {
                 {imgThree && (
                   <Image
                     className="relative mx-auto"
-                    width={490}
-                    height={100}
+                    width={560}
+                    height={200}
                     src={imgThree ?? ""}
                     alt=""
                   />
@@ -302,8 +302,8 @@ const ServicePage: NextPage<Props> = (props) => {
                   {imgFour && (
                     <Image
                       className="relative mx-auto"
-                      width={490}
-                      height={100}
+                      width={560}
+                      height={200}
                       src={imgFour ?? ""}
                       alt=""
                     />
