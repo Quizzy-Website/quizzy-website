@@ -90,7 +90,7 @@ const ELearningServices = () => {
                   <p className="mt-1">
                     <a
                       href={service.href}
-                      className="text-sm font-inter leading-6 text-primary-yellow"
+                      className="link-hover text-sm font-inter leading-6 text-primary-yellow"
                     >
                       Learn more <span aria-hidden="true">→</span>
                     </a>
@@ -114,7 +114,7 @@ const ELearningServices = () => {
                   <p className="mt-3">
                     <a
                       href={service.href}
-                      className="text-sm font-inter leading-6 text-primary-yellow"
+                      className="link-hover text-sm font-inter leading-6 text-primary-yellow"
                     >
                       Learn more <span aria-hidden="true">→</span>
                     </a>
