@@ -1,7 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ["images.unsplash.com", "tailwindui.com"],
+    remotePatterns: [
+      {
+        hostname: 
+          "images.unsplash.com", 
+        protocol: "https"
+      }, {
+        hostname: "tailwindui.com",
+        protocol: "https"
+      }
+    ]
   },
 };
 

@@ -7,7 +7,7 @@ const Journey = () => {
         <div
           className="items-center relative w-2/5 h-[240px] bg-primary-yellow hidden lg:flex"
           style={{
-            backgroundImage: "url('/elements/Rectangle850.svg')",
+            // backgroundImage: "url('/elements/Rectangle850.svg')",
             clipPath: "polygon(0 0, 75% 0, 100% 100%, 0 100%)",
           }}
         >

@@ -51,6 +51,7 @@ const ExpandableComponent = () => {
                       <dt className="text-base leading-7">
                         <Disclosure.Button className="flex flex-col w-full items-center justify-between text-center">
                           <Image
+                            unoptimized
                             src={faq.img}
                             className="h-full w-[250px]"
                             width={100}

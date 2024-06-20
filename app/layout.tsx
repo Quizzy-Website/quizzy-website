@@ -1,8 +1,6 @@
-/* eslint-disable @next/next/no-sync-scripts */
-import Head from "next/head";
 import "./globals.css";
 import type { Metadata } from "next";
-import Script from "next/script";
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   title: "Quizzy",
@@ -19,27 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* Google tag (gtag.js)  */}
-      <>
-        <Script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_G_ANALYTICS_ID}`}
-        />
-        <Script id="google-analytics">
-          {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-            
-              gtag('config', '${process.env.NEXT_PUBLIC_G_ANALYTICS_ID}');
-            `}
-        </Script>
-      </>
-      <Head>
-        <link rel="shortcut icon" href="/favicon.png" />
-        <link rel="icon" type="image/png" href="/favicon.png" />
-      </Head>
-
+      <GoogleTagManager gtmId="GTM-T8CB9ZX7" />
       <body>{children}</body>
     </html>
   );
